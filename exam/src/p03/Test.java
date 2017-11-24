@@ -19,20 +19,28 @@ public class Test {
 		System.out.println(a);
 	}
 	public static void main(String[] args){
-		Test t = new Test("가나다ABC123");
-		String str = ("나 여깄어요~~나");
-		t.print();
+		ObjectExam oe = new ObjectExam();
+		oe.inputNums();
+		
+		GuGuDan ggd = new GuGuDan();
+	    ggd.printLoop(oe);	
+	}
+		
+		
+		//Test t = new Test("가나다ABC123");
+		//String str = ("나 여깄어요~~나");
+		//t.print();
 		//t.print(str.replace("나", "박경훈"));
 		
 		//str = str.replace("나","박경훈"); //순서바뀜
 		//t.print(str);
 	
-		System.out.println(str.indexOf("나")); //lastIndexOf :마지막부터
-	     System.out.println(str.substring(1));
+		//System.out.println(str.indexOf("나")); //lastIndexOf :마지막부터
+	     //System.out.println(str.substring(1));
 	  
 	
 	}
 	
 	
 	
-}
+
