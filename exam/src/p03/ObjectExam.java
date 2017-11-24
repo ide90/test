@@ -47,7 +47,9 @@ public class ObjectExam {
 		}
 			
 	 }
+	
 	}
+	
 	public static void main(String[] args){
 		ObjectExam o;
 		o = new ObjectExam();
