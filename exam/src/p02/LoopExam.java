@@ -19,6 +19,7 @@ public class LoopExam {
 		}
 		//결국 minNum =1, maxNum=10이 됨
       for (int i=minNum;i<=maxNum;i++){
+    	  
     	  System.out.println(i+",");
 	}//minNum부터 maxNum까지 반복하는 반복문을 작성하여
 		//반복되는 i값을 출력해주세요.
