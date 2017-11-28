@@ -56,10 +56,12 @@ public class Operator {
         String[] strArr = new String[len];
        //strArr는 7개의 방을 가지고 있음
        //strArr[0]="10"부터 strArr[6]="70"까지 들어갈 수 있는 for문 
-        for(int i=0; i<strArr.length; i++){
-            strArr[i] = (i+1)+"0";
-            System.out.println("strArr[" + i +"]=" + strArr[i]);
+        for(int i=0;i<strArr.length; i++){
+        	strArr[i] = (i+1)+"0";
+        	System.out.println("strArr[" + i + "]=" +strArr[i]);
+        	
         }
+                     
 	    for(int i=strArr.length-1;i>=0;i--){
 	      	System.out.println("strArr[" + i +"]=" + strArr[i]);
 	    }
