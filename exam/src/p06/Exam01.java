@@ -10,8 +10,8 @@ public class Exam01 {
 		 //가로가 끝났을때는 ,가 없이 엔터값이 출력
 		//i와 j가 곱한값이 3의 배수일때는 '3의 배수' 문자열 출력
 				
-				String str = i+"x"+j+"="+(i*j);
-				if(i*j %3 == 0){
+				String str = i + " x "+ j +" = "+(i*j);
+				if(i*j % 3 == 0){
 					str = "3의배수";
 				}
 				System.out.print(str);
