@@ -3,24 +3,33 @@ package p08;
 import java.util.Random;
 
 public class Lotto {
-	int[] lottoNums;
-    int lottoMaxNum;
-	int checkRandomNum;
-
+	private int[] lottoNums;
+    private int lottoMaxNum;
+	private int checkRandomNum;
+    private int[] checkLottoNums;
 	
 	
 	public Lotto(){
-		this.lottoNums = new int[6];
-		this.lottoMaxNum = 45;
-		
+		this(6,45);
 		
 	}
+	public Lotto(int lottoNumsLength){
+		this(lottoNumsLength,45);
+	}
+	
 	public Lotto(int lottoNumsLength,int lottoMaxNum) {
 		this.lottoNums = new int[lottoNumsLength];
 		this.lottoMaxNum =  lottoMaxNum;
 		}
 	
+	void setCheckLottoNums(int[] checkLottoNums){
+		this.checkLottoNums = checkLottoNums;
+	}
 	
+	void printMachLottoNums(){
+		
+		
+	}
 	void makeLottoNums(){
 		Random r = new Random();
 		for (int i = 0; i < lottoNums.length; i++) {
@@ -32,7 +41,7 @@ public class Lotto {
 			}
 		}
     }
-	boolean isDupl() {
+	private boolean isDupl() {
 		for (int i = 0; i < lottoNums.length; i++) {
 			if (lottoNums[i] == checkRandomNum) {
 				return true;
@@ -65,7 +74,7 @@ public class Lotto {
 	// }
 
 	public static void main(String[] args) {
-		int[] lottoNums= new int[6];
+		//int[] lottoNums= new int[6];
 		Lotto lt = new Lotto();
 		lt.makeLottoNums();
 		lt.printLottoNums();
