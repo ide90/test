@@ -20,29 +20,25 @@ public class ForExam {
 //		}
 
 		int addNum = 1;
-		int cnt = 1;
+		//int cnt = 1;
 		for (int i = 0; i < nums.length; i++) {
 			if(i!=0){
 				addNum+= nums[i-1].length;}
 			
 			for (int j = 0; j < nums[i].length; j++) {
-				nums[i][j] = cnt++;
-				//nums[i][j] = j+addNum;
+				//nums[i][j] = cnt++;
+				nums[i][j] = j+addNum;
 			}
 		}
 
 		for (int i = 0; i < nums.length; i++) {
 			int[] num = nums[i];
-			for (int j = 0; j < num.length; j++) {
-				System.out.println(num[j] + ",");
+			for(int j=0;j<num.length;j++) {
+				System.out.print("[" + i + "][" + j+ "]=" + num[j] + "\t");
 			}
-				System.out.println();
-			}
-
+			System.out.println();
 		}
-
-		
-
 	}
+}
 
 
