@@ -9,7 +9,7 @@ public class StringList extends ArrayList{
 //		alStr = new ArrayList<String>();
 //	}
 	public String toString(){
-		return "난 내가 뭘 찍어야할지 모르겠다";
+		return "난 내가 뭘 찍어야할지 모르겠다.";
 				
 	}
 	public static void main(String[] args){
@@ -19,7 +19,10 @@ public class StringList extends ArrayList{
 //	    System.out.println(len);
 //	    
 		ArrayList sl = new StringList();
+		sl.add("fd");
+		sl.add("fd");
 		System.out.println(sl);
+		
 	}
 
 }

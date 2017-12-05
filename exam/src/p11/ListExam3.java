@@ -15,6 +15,7 @@ public class ListExam3 {
 				alInt.add(r.nextInt(100) + 1);
 
 			}
+			int sum =0;
 			for (Integer i : alInt) {
 				System.out.print(i + ",");
 

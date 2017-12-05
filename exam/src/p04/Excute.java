@@ -1,7 +1,5 @@
 package p04;
 
-
-
 import p03.GuGuDan;
 import p03.ObjectExam;
 
