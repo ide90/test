@@ -5,11 +5,11 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class StringList {
-
+	ArrayList<Integer>sl;
 	int minSize = 0;
 	int maxSize = 0;
 
-	StringList() {
+	 StringList() {
 		sl = new ArrayList<Integer>();
 		Scanner s = new Scanner(System.in);
 		System.out.println("초기값을 입력해주세요=>");
